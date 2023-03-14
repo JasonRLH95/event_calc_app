@@ -6,4 +6,4 @@ const numPeoples=()=>{
 const numtables=()=>{
 
 }
-const logResult=()=>{console.log(input1)}
+const logResult=()=>{console.log(input1.value)}
