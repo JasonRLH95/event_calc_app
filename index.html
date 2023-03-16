@@ -8,13 +8,19 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    <h1>hello1</h1>
-    <p>insert data:</p>
-    <input id="input1" type="text" placeholder="amount of peoples" onchange="numPeoples()"/>
-    <p>or</p>
-    <input id="input2" type="text" placeholder="amount of tables"/>
-    <button id="btn1" onclick="logResult()">calculate</button>
-    <h1 id="result"></h1>
+    <h1 id="mainHead" dir="rtl">מחשבון הקמות</h1>
+    <div id="mainDiv">
+        <p id="para1" dir="rtl">הכנס נתונים כאן:</p>
+        <div id="secDiv">
+            <input id="input1" type="text" placeholder="כמות אנשים באולם" dir="rtl"/>
+            <!-- <p>or</p> -->
+            <!-- <input id="input2" type="text" placeholder="amount of tables"/> -->
+            <button id="btn1" onclick="logResult()" dir="rtl">חשב</button>
+        </div>
+        <h1 class="results" id="result1"></h1>
+        <h1 class="results" id="result2"></h1>
+        <h1 class="results" id="result3"></h1>
+    </div>
     <script src='script.js'></script>
 </body>
 </html>
