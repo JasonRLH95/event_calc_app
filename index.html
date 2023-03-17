@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title dir="rtl">מחשבון הקמות</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
@@ -13,13 +13,26 @@
         <p id="para1" dir="rtl">הכנס נתונים כאן:</p>
         <div id="secDiv">
             <input id="input1" type="text" placeholder="כמות אנשים באולם" dir="rtl"/>
-            <!-- <p>or</p> -->
-            <!-- <input id="input2" type="text" placeholder="amount of tables"/> -->
+            <input id="input2" type="text" placeholder="כמות שולחנות באירוע" dir="rtl"/>
             <button id="btn1" onclick="logResult()" dir="rtl">חשב</button>
         </div>
-        <h1 class="results" id="result1"></h1>
-        <h1 class="results" id="result2"></h1>
-        <h1 class="results" id="result3"></h1>
+        <h1 class="results" id="result1" dir="rtl"></h1>
+        <h1 class="results" id="result2" dir="rtl"></h1>
+        <h1 class="results" id="result3" dir="rtl"></h1>
+    </div>
+    <div id="btnsPanel" dir="rtl">
+        <button id="change1" onclick="change1()">חשב על פי כמות האנשים</button>
+        <button id="change2" onclick="change2()">חשב על פי כמות השולחנות</button>
+    </div>
+    <div id="littleMenuBar" onclick="showOptions()">
+        <h2>≡</h2>
+    </div>
+    <div id="optionsDiv">
+        <div id="option1" onclick="change1()" dir="rtl"></div>
+        <div id="option2" onclick="change2()" dir="rtl"></div>
+    </div>
+    <div id="thirdDiv">
+        <p id="rightsSign">&reg; All rights reserved to JasonR95</p>
     </div>
     <script src='script.js'></script>
 </body>
